@@ -11,7 +11,6 @@ This is my solution to the [Social proof section challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -24,14 +23,21 @@ Users should be able to view the optimal layout for the section depending on the
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](../screenshots/desktop.png)
+![](../screenshots/mobile-cards.png), (../screenshots/mobile-hero.png)
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Solution: [Solution URL here](https://www.frontendmentor.io/solutions/social-proof-section-x5WwDPe0F-)
+- Live Site: [Live site URL here](https://c-zltv.github.io/social-proof-section/)
 
 ## My process
+
+I build the social proof section taking the mobile first approach and mainly using Flexbox for the layout. The two parts, hero and cards, became flex containers on the desktop version while on the mobile version all the components fall in a column.
+
+The star ratings layout was made with self-align applied to all three flex items. While the five starts are the svg background image applied to a div with background-repeat on space and a fixed width and height.
+
+The cards have transform on translateY() for the scale effect.
 
 ### Built with
 
@@ -44,18 +50,27 @@ Users should be able to view the optimal layout for the section depending on the
 
 ### What I learned
 
-```html
-
-```
+This project helped me understand and play around with background properties and values:
 
 ```css
-
+background-image: url("../images/bg-pattern-top-mobile.svg"),
+  url("../images/bg-pattern-bottom-mobile.svg");
+background-position: top left, bottom left;
+background-repeat: no-repeat;
+background-size: 100%;
 ```
 
-### Useful resources
+I also got to implement translateY for the into an actual project and in a useful way:
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+```css
+.card-2 {
+  transform: translateY(1rem);
+}
+
+.card-3 {
+  transform: translateY(2rem);
+}
+```
 
 ## Author
 
