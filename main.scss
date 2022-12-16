@@ -17,6 +17,11 @@ body {
   line-height: 1.4;
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom left;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 img {
@@ -24,14 +29,8 @@ img {
   width: 100%;
 }
 
-.review-proof {
-  background-repeat: no-repeat;
-  background-image: url("images/bg-pattern-top-mobile.svg"),
-    url("../images/bg-pattern-bottom-mobile.svg");
-}
-
 .review-wrapper {
-  width: min(90%, 90rem);
+  width: min(90%, 65rem);
   margin-inline: auto;
 }
 
@@ -51,16 +50,20 @@ img {
 }
 
 .stars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1.75rem 0;
 }
 
 .star {
   background-color: $clr-secondary;
-  padding: 1.8rem;
-  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
 
   &-img {
     background-repeat: space;
@@ -73,12 +76,12 @@ img {
     color: $clr-primary;
     font-weight: 500;
     font-size: 1.1rem;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
 .cards {
-  padding-bottom: 3rem;
+  padding: 3rem;
 }
 
 .card-profile-img {
@@ -109,5 +112,71 @@ img {
       color: $clr-accent-bright;
       margin-top: 0;
     }
+  }
+}
+
+@media (min-width: 810px) {
+  body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom;
+    background-repeat: no-repeat;
+    background-size: 50%, 85%;
+  }
+
+  .hero {
+    padding-bottom: 4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-txt {
+      flex-basis: 35%;
+    }
+  }
+
+  .stars {
+    flex-basis: 60%;
+  }
+
+  .star {
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+
+    &-img {
+      margin-inline-end: 1.5rem;
+    }
+  }
+
+  .star-1 {
+    align-self: flex-start;
+  }
+
+  .star-2 {
+    align-self: center;
+  }
+
+  .star-3 {
+    align-self: flex-end;
+  }
+
+  .cards {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  /*.card-1 {
+    transform: translateY(-1rem);
+  }*/
+
+  .card-2 {
+    transform: translateY(1rem);
+  }
+
+  .card-3 {
+    transform: translateY(2rem);
   }
 }
