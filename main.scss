@@ -115,6 +115,15 @@ img {
   }
 }
 
+.attribution {
+  a {
+    text-decoration: none;
+    color: darken($clr-accent-bright, 35%);
+  }
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 810px) {
   body {
     background-image: url("../images/bg-pattern-top-desktop.svg"),

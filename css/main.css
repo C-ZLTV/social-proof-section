@@ -102,6 +102,15 @@ img {
   margin-top: 0;
 }
 
+.attribution {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: #93104b;
+}
+
 @media (min-width: 810px) {
   body {
     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
