@@ -23,8 +23,9 @@ Users should be able to view the optimal layout for the section depending on the
 
 ### Screenshot
 
-![](../screenshots/desktop.png)
-![](../screenshots/mobile-cards.png), (../screenshots/mobile-hero.png)
+![](images/desktop.png)
+![](images/mobile-cards.png)
+![](images/mobile-hero.png)
 
 ### Links
 
